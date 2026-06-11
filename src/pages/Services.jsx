@@ -33,14 +33,14 @@ const Services = () => {
   return (
     <div style={{ paddingTop: '120px', paddingBottom: '100px', position: 'relative', minHeight: '100vh' }}>
       <div className="scanline-overlay"></div>
-      <section style={{ width: '100%', padding: '0 4rem', position: 'relative', zIndex: 2, boxSizing: 'border-box' }}>
+      <section className="container" style={{ position: 'relative', zIndex: 2 }}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           style={{ textAlign: 'center', marginBottom: '4rem' }}
         >
-          <h2 style={{ fontSize: '4rem', margin: 0, textShadow: '0 0 20px var(--accent-cyan)' }}>
+          <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', margin: 0, textShadow: '0 0 20px var(--accent-cyan)' }}>
             Our <span style={{ color: 'var(--accent-cyan)' }}>Services</span>
           </h2>
           <p style={{ color: 'var(--text-secondary)', marginTop: '10px', letterSpacing: '3px' }}>[ EMPOWERING THE FUTURE ]</p>

@@ -23,7 +23,7 @@ const ProductDetails = () => {
           <ArrowLeft size={16} /> Back
         </Link>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           
           {/* Image Side */}
           <motion.div 
@@ -52,7 +52,7 @@ const ProductDetails = () => {
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              style={{ fontSize: '3.5rem', marginBottom: '0.5rem', background: `linear-gradient(90deg, #fff, ${product.color})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+              style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', marginBottom: '0.5rem', background: `linear-gradient(90deg, #fff, ${product.color})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
             >
               {product.name}
             </motion.h1>

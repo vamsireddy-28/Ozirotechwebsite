@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .advanced-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
   perspective: 2000px;
 }
@@ -317,4 +317,36 @@ nav.scrolled {
   animation: scanline 8s linear infinite;
   pointer-events: none;
   z-index: 9999;
+}
+
+/* Mobile Responsive Overrides */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem !important;
+  }
+  nav.scrolled {
+    padding: 0.5rem 0;
+  }
+  .nav-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-logo {
+    font-size: 1.4rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+  }
 }

@@ -51,7 +51,7 @@ const Home = () => {
             style={{ transformStyle: 'preserve-3d' }}
           >
             <h1 style={{
-              fontSize: '4.5rem',
+              fontSize: 'clamp(2.5rem, 8vw, 4.5rem)',
               marginBottom: '1rem',
               lineHeight: '1.1'
             }}>
@@ -71,7 +71,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
-            style={{ fontSize: '1.4rem', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 3rem auto', lineHeight: '1.8' }}
+            style={{ fontSize: 'clamp(1rem, 3vw, 1.4rem)', color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto 3rem auto', lineHeight: '1.8' }}
           >
             Empowering Education with Future Ai & Content Creation Labs
           </motion.p>

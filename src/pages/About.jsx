@@ -9,14 +9,14 @@ const About = () => {
   return (
     <div style={{ paddingTop: '120px', paddingBottom: '100px', position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
       <div className="scanline-overlay"></div>
-      <section style={{ width: '100%', padding: '0 4rem', position: 'relative', zIndex: 2, boxSizing: 'border-box' }}>
+      <section className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 style={{ fontSize: '4rem', marginBottom: '2rem' }}>
+            <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', marginBottom: '2rem' }}>
               About <span style={{ color: 'var(--accent-purple)', textShadow: '0 0 20px var(--accent-purple)' }}>OZIROTECH</span>
             </h2>
             <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '2', marginBottom: '2rem' }}>
