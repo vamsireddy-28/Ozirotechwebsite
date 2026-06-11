@@ -20,13 +20,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--bg-color);
   background-image: var(--bg-gradient);
   color: var(--text-primary);
   font-family: var(--font-main);
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 a {
