@@ -17,7 +17,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <div style={{ paddingTop: '80px', paddingBottom: '100px' }}>
+    <div style={{ paddingTop: '140px', paddingBottom: '100px' }}>
       <div className="container">
         <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)', marginBottom: '2rem', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#fff'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}>
           <ArrowLeft size={16} /> Back
