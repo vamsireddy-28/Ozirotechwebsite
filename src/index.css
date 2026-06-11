@@ -216,6 +216,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 2rem;
 }
 
+.full-container {
+  width: 100%;
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+
 .advanced-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -342,6 +348,9 @@ nav.scrolled {
     font-size: 1.4rem;
   }
   .container {
+    padding: 0 1rem;
+  }
+  .full-container {
     padding: 0 1rem;
   }
 }

@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <div style={{ paddingTop: '120px', paddingBottom: '100px', position: 'relative', minHeight: '100vh' }}>
       <div className="scanline-overlay"></div>
-      <section className="container" style={{ position: 'relative', zIndex: 2 }}>
+      <section className="full-container" style={{ position: 'relative', zIndex: 2 }}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
