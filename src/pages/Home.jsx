@@ -51,19 +51,20 @@ const Home = () => {
             style={{ transformStyle: 'preserve-3d' }}
           >
             <h1 style={{
-              fontSize: 'clamp(2.5rem, 8vw, 4.5rem)',
-              marginBottom: '1rem',
+              margin: 0,
               lineHeight: '1.1'
             }}>
               <motion.span
                 className="radial-text-gradient"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                style={{ display: 'inline-block' }}
+                style={{ display: 'inline-block', fontSize: 'clamp(2.5rem, 8vw, 5rem)' }}
               >
                 OZIROTECH
               </motion.span> <br />
-              <span className="text-gradient">AI WORLD PRIVATE LIMITED</span>
+              <span className="text-gradient" style={{ display: 'inline-block', fontSize: 'clamp(1rem, 4.5vw, 2.5rem)', marginTop: '0.5rem', whiteSpace: 'nowrap' }}>
+                AI WORLD PRIVATE LIMITED
+              </span>
             </h1>
           </motion.div>
 
