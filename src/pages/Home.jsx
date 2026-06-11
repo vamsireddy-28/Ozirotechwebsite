@@ -62,7 +62,7 @@ const Home = () => {
               >
                 OZIROTECH
               </motion.span> <br />
-              <span className="text-gradient" style={{ display: 'inline-block', fontSize: 'clamp(1.2rem, 5.5vw, 2.5rem)', marginTop: '0.5rem', whiteSpace: 'nowrap' }}>
+              <span className="text-gradient" style={{ display: 'inline-block', fontSize: 'clamp(1.4rem, 6.5vw, 2.5rem)', marginTop: '0.5rem', whiteSpace: 'nowrap' }}>
                 AI WORLD PRIVATE LIMITED
               </span>
             </h1>
