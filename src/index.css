@@ -343,7 +343,7 @@ nav.scrolled {
   .nav-links {
     gap: 1rem;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
