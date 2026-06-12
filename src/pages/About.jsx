@@ -19,10 +19,11 @@ const About = () => {
             <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', marginBottom: '2rem' }}>
               About <span style={{ color: 'var(--accent-purple)', textShadow: '0 0 20px var(--accent-purple)' }}>OZIROTECH</span>
             </h2>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '2', marginBottom: '2rem' }}>
-              Ozirotech is a pioneer in the intersection of Artificial Intelligence, Robotics, and Digital Education. 
-              Our mission is to empower the next generation with immersive labs, cutting-edge hardware arsenals, and revolutionary AI content creation tools. 
-              We build the architecture of tomorrow, today.
+            <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '1.5rem', textAlign: 'justify' }}>
+              <strong>OZIROTECH AI WORLD PRIVATE LIMITED</strong> is a forward-thinking technology company specializing in transforming educational institutions. We focus on integrating advanced Artificial Intelligence, state-of-the-art Robotics, and comprehensive digital training infrastructure directly into college campuses. Our dedicated team of industry experts and engineers works relentlessly to bridge the gap between traditional academic learning and real-world technological advancements.
+            </p>
+            <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '2rem', textAlign: 'justify' }}>
+              From designing and setting up world-class OpenAI and Robotics laboratories to providing expert trainers, regular rigorous maintenance, and cutting-edge hardware upgrades, we deliver a complete end-to-end ecosystem. We don't just supply equipment; we cultivate environments of innovation. Our mission is to empower the next generation of students and educators with the immersive tools, hands-on experience, and ongoing support they need to lead in an era of rapid digital evolution.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginTop: '3rem' }}>
               <div className="glass-panel" style={{ padding: '2rem 3rem', minWidth: '250px' }}>
