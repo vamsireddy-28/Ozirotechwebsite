@@ -22,7 +22,7 @@ const Footer = () => {
             <li><Link to="/" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color='var(--accent-cyan)'} onMouseOut={e => e.target.style.color='var(--text-secondary)'}>Home</Link></li>
             <li><a href="/#about" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color='var(--accent-cyan)'} onMouseOut={e => e.target.style.color='var(--text-secondary)'}>About Us</a></li>
             <li><a href="/#services" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color='var(--accent-cyan)'} onMouseOut={e => e.target.style.color='var(--text-secondary)'}>Services</a></li>
-            <li><Link to="/products" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color='var(--accent-cyan)'} onMouseOut={e => e.target.style.color='var(--text-secondary)'}>Hardware Arsenal</Link></li>
+            <li><Link to="/products" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color='var(--accent-cyan)'} onMouseOut={e => e.target.style.color='var(--text-secondary)'}>Advanced Hardware</Link></li>
           </ul>
         </div>
 

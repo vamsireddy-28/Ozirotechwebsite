@@ -20,7 +20,7 @@ const Products = () => {
           style={{ marginBottom: '4rem', paddingBottom: '1rem', borderBottom: '1px solid var(--glass-border)' }}
         >
           <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', margin: 0, textShadow: '0 0 20px var(--accent-cyan)' }}>
-            Hardware <span style={{ color: 'var(--accent-purple)' }}>Arsenal</span>
+            Advanced <span style={{ color: 'var(--accent-purple)' }}>Hardware</span>
           </h1>
           <p style={{ color: 'var(--accent-cyan)', letterSpacing: '3px', marginTop: '10px' }}>[ NEXT-GEN LABS ]</p>
         </motion.div>
