@@ -106,7 +106,7 @@ const ProductCard = ({ product, index, displayOnly = false }) => {
           style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column', zIndex: 2 }}
         >
           <h3 style={{ 
-            fontSize: '1.8rem', 
+            fontSize: '2.2rem', 
             marginBottom: '0.5rem', 
             color: '#fff',
             textShadow: isHovered ? `0 0 15px ${product.color}` : 'none',
@@ -114,7 +114,7 @@ const ProductCard = ({ product, index, displayOnly = false }) => {
           }}>
             {product.name}
           </h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.3rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>
             {product.tagline}
           </p>
           {!displayOnly && (

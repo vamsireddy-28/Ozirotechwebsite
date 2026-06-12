@@ -34,8 +34,8 @@ const Home = () => {
               scale: { duration: 20, repeat: Infinity, ease: "easeInOut" }
             }}
             style={{ 
-              width: '90vw', 
-              maxWidth: '1200px', 
+              width: '68vw', 
+              maxWidth: '900px', 
               height: 'auto', 
               opacity: 0.45, 
               filter: 'blur(1px) drop-shadow(0 0 80px rgba(255,204,0,0.8))' 
