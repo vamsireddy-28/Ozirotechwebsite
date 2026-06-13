@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Zap, Box, Activity } from 'lucide-react';
+import { ArrowLeft, Box, Activity } from 'lucide-react';
 
 const ProductDetails = () => {
   const { id } = useParams();

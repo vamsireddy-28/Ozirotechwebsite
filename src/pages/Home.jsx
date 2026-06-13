@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -115,7 +115,7 @@ const Home = () => {
       <div className="scanline-overlay"></div>
 
       {/* Hero Section with CSS Grid & Parallax */}
-      <section style={{ position: 'relative', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+      <section className="hero-section">
 
         {/* Animated Background Logo */}
         <motion.div style={{ y, scale, opacity, position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
@@ -191,7 +191,7 @@ const Home = () => {
       </section>
 
       {/* Why Robotics Education Matters Section */}
-      <section className="full-container" style={{ position: 'relative', zIndex: 2, padding: '4rem 2rem', background: 'var(--glass-bg)', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
+      <section className="full-container" style={{ position: 'relative', zIndex: 2, padding: 'clamp(2rem, 8vw, 8rem) 2rem', background: 'var(--glass-bg)', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
         <div style={{ width: '100%', margin: '0 auto', textAlign: 'center' }}>
           <motion.h2 
             initial={{ opacity: 0, y: 50 }}

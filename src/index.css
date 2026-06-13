@@ -301,10 +301,10 @@ nav.scrolled {
 }
 .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 4.5rem;
 }
 .nav-links a {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease;
@@ -400,6 +400,15 @@ nav.scrolled {
   }
 }
 
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 /* Mobile Responsive Overrides */
 @media (max-width: 768px) {
   html, body {
@@ -409,6 +418,11 @@ nav.scrolled {
     flex-direction: column;
     gap: 1rem;
     padding: 0 1rem !important;
+  }
+  .hero-section {
+    height: auto;
+    min-height: 60vh;
+    padding: 100px 0 50px 0;
   }
   nav.scrolled {
     padding: 0.5rem 0;
