@@ -32,7 +32,7 @@ const Footer = () => {
           <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-secondary)', lineHeight: '2' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
               <MapPin size={18} color="var(--accent-purple)" style={{ flexShrink: 0 }} />
-              <span>Koramangala, Bengaluru, Karnataka, India</span>
+              <span>Bhimunipatnam, visakhapatnam, Andhara Pradesh, India</span>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
               <Mail size={18} color="var(--accent-purple)" style={{ flexShrink: 0 }} />
@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <Phone size={18} color="var(--accent-purple)" style={{ flexShrink: 0 }} />
-              <span>+91 98765 43210</span>
+              <span>+91 7815823764</span>
             </li>
           </ul>
         </div>
