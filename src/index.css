@@ -27,6 +27,7 @@ html, body {
 }
 
 body {
+  zoom: 0.85;
   background: var(--bg-color);
   background-image: var(--bg-gradient);
   color: var(--text-primary);
@@ -414,7 +415,7 @@ nav.scrolled {
   }
   
   .nav-links {
-    gap: 1rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -425,7 +426,7 @@ nav.scrolled {
     font-size: 1.4rem;
   }
   .nav-links a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   .container {
     padding: 0 1rem;
@@ -440,9 +441,9 @@ nav.scrolled {
     font-size: 14px;
   }
   .nav-links {
-    gap: 0.8rem;
+    gap: 2rem;
   }
   .nav-links a {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 }

@@ -78,10 +78,10 @@ const About = () => {
             </h2>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem', marginBottom: '4rem', justifyContent: 'flex-start' }}>
-              <div className="glass-panel" style={{ flex: '1 1 400px', maxWidth: '650px', minHeight: '280px', padding: '3.5rem 3rem', fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+              <div className="glass-panel" style={{ flex: '1 1 400px', maxWidth: '650px', minHeight: '280px', padding: '3.5rem 3rem', fontSize: '1.4rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
                 <AnimatedText text={text1} delayOffset={0.5} isBoldFirstWords={2} />
               </div>
-              <div className="glass-panel" style={{ flex: '1 1 400px', maxWidth: '650px', minHeight: '280px', padding: '3.5rem 3rem', fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+              <div className="glass-panel" style={{ flex: '1 1 400px', maxWidth: '650px', minHeight: '280px', padding: '3.5rem 3rem', fontSize: '1.4rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
                 <AnimatedText text={text2} delayOffset={2} isBoldFirstWords={2} />
               </div>
             </div>

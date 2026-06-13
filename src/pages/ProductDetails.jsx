@@ -18,7 +18,7 @@ const ProductDetails = () => {
 
   return (
     <div style={{ paddingTop: '140px', paddingBottom: '100px' }}>
-      <div className="product-detail-container">
+      <div className="product-detail-container" style={{ width: '90%', maxWidth: '1400px', margin: '0 auto' }}>
         <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)', marginBottom: '2rem', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#fff'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}>
           <ArrowLeft size={16} /> Back
         </Link>
@@ -67,7 +67,7 @@ const ProductDetails = () => {
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              style={{ fontSize: '1.2rem', lineHeight: '1.8', marginBottom: '2rem', color: '#ccc', fontStyle: 'italic', borderLeft: `3px solid ${product.color}`, paddingLeft: '1rem' }}
+              style={{ fontSize: '1.4rem', lineHeight: '1.8', marginBottom: '2rem', color: '#ccc', fontStyle: 'italic', borderLeft: `3px solid ${product.color}`, paddingLeft: '1rem' }}
             >
               {product.description}
             </motion.p>
@@ -80,7 +80,7 @@ const ProductDetails = () => {
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 + (idx * 0.1) }}
-                    style={{ fontSize: '1rem', lineHeight: '1.9', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}
+                    style={{ fontSize: '1.2rem', lineHeight: '1.9', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}
                   >
                     {paragraph}
                   </motion.p>
