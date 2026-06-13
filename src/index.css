@@ -409,6 +409,10 @@ nav.scrolled {
   overflow: hidden;
 }
 
+.robotics-text-block {
+  width: 80%;
+}
+
 /* Mobile Responsive Overrides */
 @media (max-width: 768px) {
   html, body {
@@ -423,6 +427,9 @@ nav.scrolled {
     height: auto;
     min-height: 60vh;
     padding: 220px 0 50px 0;
+  }
+  .robotics-text-block {
+    width: 95%;
   }
   nav.scrolled {
     padding: 0.5rem 0;

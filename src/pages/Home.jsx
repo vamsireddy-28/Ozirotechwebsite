@@ -202,7 +202,7 @@ const Home = () => {
           >
             Why <span style={{ color: 'var(--accent-purple)' }}>Robotics Education</span> Matters
           </motion.h2>
-          <div style={{ color: 'var(--text-secondary)', fontSize: 'clamp(1.1rem, 3.5vw, 1.4rem)', width: '80%', margin: '0 auto 3rem auto', lineHeight: '1.8', textAlign: 'left' }}>
+          <div className="robotics-text-block" style={{ color: 'var(--text-secondary)', fontSize: 'clamp(1.1rem, 3.5vw, 1.4rem)', margin: '0 auto 3rem auto', lineHeight: '1.8', textAlign: 'left' }}>
             <AnimatedText 
               text="Robotics and Artificial Intelligence are rapidly transforming every major industry globally, including manufacturing, healthcare, agriculture, logistics, defense, transportation, and smart cities. As these fields evolve, the demand for skilled innovators continues to skyrocket. Through practical experimentation, advanced project-based learning, and access to state-of-the-art lab equipment, students gain invaluable hands-on experience with the exact technologies that will define and shape the future workforce. We believe that empowering the next generation with these tools is the key to unlocking unprecedented technological advancements." 
               delayOffset={0.2} 
