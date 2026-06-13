@@ -3,8 +3,8 @@
 :root {
   --bg-color: #03050a;
   --bg-gradient: radial-gradient(circle at top right, #0a0f1a, #03050a);
-  --text-primary: #f0f0f0;
-  --text-secondary: #a0a0a0;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
   --accent-cyan: #ffcc00;
   --accent-purple: #ff6600;
   --accent-magenta: #ffd700;
