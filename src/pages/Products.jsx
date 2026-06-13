@@ -12,14 +12,14 @@ const Products = () => {
     <div style={{ paddingTop: '120px', paddingBottom: '100px', position: 'relative', minHeight: '100vh' }}>
       <div className="scanline-overlay"></div>
       
-      <section className="full-container" style={{ position: 'relative', zIndex: 2 }}>
+      <section style={{ position: 'relative', zIndex: 2, width: '100%', padding: '0 2rem' }}>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          style={{ marginBottom: '4rem', paddingBottom: '1rem', borderBottom: '1px solid var(--glass-border)' }}
+          style={{ marginBottom: '4rem', paddingBottom: '1rem', borderBottom: '1px solid var(--glass-border)', textAlign: 'center' }}
         >
-          <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', margin: 0, textShadow: '0 0 20px var(--accent-cyan)' }}>
+          <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 4rem)', margin: 0, whiteSpace: 'nowrap' }}>
             Advanced <span style={{ color: 'var(--accent-purple)' }}>Hardware</span>
           </h1>
           <p style={{ color: 'var(--accent-cyan)', letterSpacing: '3px', marginTop: '10px' }}>[ NEXT-GEN LABS ]</p>

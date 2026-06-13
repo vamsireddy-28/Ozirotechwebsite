@@ -18,12 +18,27 @@ const ProductDetails = () => {
 
   return (
     <div style={{ paddingTop: '140px', paddingBottom: '100px' }}>
-      <div className="container">
+      <div className="product-detail-container">
         <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--text-secondary)', marginBottom: '2rem', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#fff'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}>
           <ArrowLeft size={16} /> Back
         </Link>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+        {/* Product Title Header */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          style={{ textAlign: 'center', marginBottom: '4rem' }}
+        >
+          <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', marginBottom: '0.5rem', background: `linear-gradient(90deg, #fff, ${product.color})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.1 }}>
+            {product.name}
+          </h1>
+          <h3 style={{ color: 'var(--text-secondary)', fontWeight: '400', letterSpacing: '3px', textTransform: 'uppercase', margin: 0 }}>
+            {product.tagline}
+          </h3>
+        </motion.div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '4rem', alignItems: 'start', width: '100%', boxSizing: 'border-box' }}>
           
           {/* Image Side */}
           <motion.div 
@@ -31,7 +46,7 @@ const ProductDetails = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="glass-panel"
-            style={{ padding: '1rem', position: 'relative' }}
+            style={{ padding: '1.5rem', position: 'sticky', top: '120px' }}
           >
             <div style={{ position: 'absolute', top: '-20px', left: '-20px', right: '-20px', bottom: '-20px', background: `radial-gradient(circle at center, ${product.color}22, transparent 70%)`, zIndex: -1 }}></div>
             <motion.img 
@@ -49,22 +64,6 @@ const ProductDetails = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2, staggerChildren: 0.1 }}
           >
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', marginBottom: '0.5rem', background: `linear-gradient(90deg, #fff, ${product.color})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
-            >
-              {product.name}
-            </motion.h1>
-            
-            <motion.h3 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              style={{ color: 'var(--text-secondary)', fontWeight: '400', letterSpacing: '2px', marginBottom: '2rem', textTransform: 'uppercase' }}
-            >
-              {product.tagline}
-            </motion.h3>
-            
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -89,7 +88,7 @@ const ProductDetails = () => {
               </div>
             )}
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '2rem', marginBottom: '3rem', width: '100%', boxSizing: 'border-box' }}>
               {product.features && product.features.length > 0 && (
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.9 }}

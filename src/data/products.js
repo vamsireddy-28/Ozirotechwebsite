@@ -93,5 +93,24 @@ export const products = [
       'Control': 'Wi-Fi / App'
     },
     color: '#ff6600'
+  },
+  {
+    id: 'industrial-3d-printer',
+    name: 'Industrial 3D Printer',
+    tagline: 'Precision Rapid Prototyping',
+    image: '/assets/futuristic_3d_printer_1781337187211.png',
+    description: 'Transform digital concepts into physical reality with our industrial-grade 3D printer, featuring dual extrusion and sub-millimeter precision.',
+    detailedContent: [
+      "Our Industrial 3D Printer is designed to bridge the gap between digital ideation and physical creation. Equipped with a state-of-the-art dual-extrusion system, it allows for the simultaneous printing of complex geometries and soluble support structures, ensuring flawless overhangs and intricate internal channels.",
+      "With a massive build volume and a fully enclosed, temperature-controlled chamber, the printer guarantees warp-free production of large-scale prototypes using advanced engineering filaments such as carbon fiber, nylon, and ABS.",
+      "An intuitive touchscreen interface, auto-bed leveling, and seamless cloud integration streamline the printing workflow. Whether you're an engineering student prototyping a mechanical part or a designer exploring new forms, this printer delivers sub-millimeter precision every single time."
+    ],
+    specs: {
+      'Build Volume': '300x300x400 mm',
+      'Resolution': '50 microns',
+      'Extruder': 'Dual Direct Drive',
+      'Materials': 'PLA, ABS, Nylon'
+    },
+    color: '#ffd700'
   }
 ];
