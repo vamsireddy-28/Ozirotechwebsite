@@ -19,10 +19,10 @@ const Products = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           style={{ marginBottom: '4rem', paddingBottom: '1rem', borderBottom: '1px solid var(--glass-border)', textAlign: 'center' }}
         >
-          <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 4rem)', margin: 0, whiteSpace: 'nowrap' }}>
+          <h1 style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', margin: 0, whiteSpace: 'nowrap' }}>
             Advanced <span style={{ color: 'var(--accent-purple)' }}>Hardware</span>
           </h1>
-          <p style={{ color: 'var(--accent-cyan)', letterSpacing: '3px', marginTop: '10px' }}>[ NEXT-GEN LABS ]</p>
+          <p style={{ color: 'var(--accent-cyan)', fontSize: '0.9rem', letterSpacing: '3px', marginTop: '10px' }}>[ NEXT-GEN LABS ]</p>
         </motion.div>
 
         <div className="product-grid">

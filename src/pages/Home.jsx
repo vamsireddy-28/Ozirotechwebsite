@@ -39,11 +39,11 @@ const TiltCard = ({ children, delayIndex = 0 }) => {
       whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(255, 102, 0, 0.3)' }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ 
-        padding: '2rem 1.5rem', 
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
+      style={{
+        padding: '2rem 1.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         minHeight: '200px',
         rotateX,
         rotateY,
@@ -119,22 +119,22 @@ const Home = () => {
 
         {/* Animated Background Logo */}
         <motion.div style={{ y, scale, opacity, position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-          <motion.img 
-            src="/assets/logo.png" 
-            alt="Ozirotech Background" 
+          <motion.img
+            src="/assets/logo.png"
+            alt="Ozirotech Background"
             animate={{ rotate: [-15, 30, -15] }}
-            transition={{ 
+            transition={{
               rotate: { duration: 10, repeat: Infinity, ease: "easeInOut" }
             }}
-            style={{ 
-              width: 'clamp(300px, 50vw, 600px)', 
-              height: 'auto', 
+            style={{
+              width: 'clamp(500px, 80vw, 1000px)',
+              height: 'auto',
               marginTop: '80px',
-              opacity: 0.7, 
+              opacity: 0.5,
               filter: 'drop-shadow(0 0 30px rgba(255,204,0,0.3)) contrast(1.1) brightness(1.1)',
               imageRendering: '-webkit-optimize-contrast',
               WebkitFontSmoothing: 'antialiased'
-            }} 
+            }}
           />
         </motion.div>
 
@@ -194,7 +194,7 @@ const Home = () => {
       {/* Why Robotics Education Matters Section */}
       <section className="full-container" style={{ position: 'relative', zIndex: 2, padding: 'clamp(2rem, 8vw, 8rem) 2rem', background: 'var(--glass-bg)', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
         <div style={{ width: '100%', margin: '0 auto', textAlign: 'center' }}>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -204,9 +204,9 @@ const Home = () => {
             Why <span style={{ color: 'var(--accent-purple)' }}>Robotics Education</span> Matters
           </motion.h2>
           <div className="robotics-text-block" style={{ color: 'var(--text-secondary)', fontSize: 'clamp(1.1rem, 3.5vw, 1.4rem)', margin: '0 auto 3rem auto', lineHeight: '1.8', textAlign: 'left' }}>
-            <AnimatedText 
-              text="Robotics and Artificial Intelligence are rapidly transforming every major industry globally, including manufacturing, healthcare, agriculture, logistics, defense, transportation, and smart cities. As these fields evolve, the demand for skilled innovators continues to skyrocket. Through practical experimentation, advanced project-based learning, and access to state-of-the-art lab equipment, students gain invaluable hands-on experience with the exact technologies that will define and shape the future workforce. We believe that empowering the next generation with these tools is the key to unlocking unprecedented technological advancements." 
-              delayOffset={0.2} 
+            <AnimatedText
+              text="Robotics and Artificial Intelligence are rapidly transforming every major industry globally, including manufacturing, healthcare, agriculture, logistics, defense, transportation, and smart cities. As these fields evolve, the demand for skilled innovators continues to skyrocket. Through practical experimentation, advanced project-based learning, and access to state-of-the-art lab equipment, students gain invaluable hands-on experience with the exact technologies that will define and shape the future workforce. We believe that empowering the next generation with these tools is the key to unlocking unprecedented technological advancements."
+              delayOffset={0.2}
             />
           </div>
 

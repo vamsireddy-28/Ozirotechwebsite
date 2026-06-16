@@ -94,7 +94,7 @@ const ProductCard = ({ product, index, displayOnly = false }) => {
               scale: isHovered ? 1.1 : 1
             }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }} 
           />
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(to top, rgba(3,5,10,1), transparent)', zIndex: 1 }}></div>
         </div>
@@ -106,7 +106,7 @@ const ProductCard = ({ product, index, displayOnly = false }) => {
           style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column', zIndex: 2 }}
         >
           <h3 style={{ 
-            fontSize: '2.2rem', 
+            fontSize: '1.8rem', 
             marginBottom: '0.5rem', 
             color: '#fff',
             textShadow: isHovered ? `0 0 15px ${product.color}` : 'none',
@@ -114,11 +114,11 @@ const ProductCard = ({ product, index, displayOnly = false }) => {
           }}>
             {product.name}
           </h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.3rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>
             {product.tagline}
           </p>
           {!displayOnly && (
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', color: product.color, fontWeight: '800', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', textShadow: `0 0 10px ${product.color}aa` }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', color: product.color, fontWeight: '800', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '2px', textShadow: `0 0 10px ${product.color}aa` }}>
               View <ChevronRight size={18} />
             </span>
           )}
