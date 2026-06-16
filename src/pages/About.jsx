@@ -234,7 +234,7 @@ const About = () => {
             >
               {/* Image */}
               <div style={{ width: '100%', height: '380px', overflow: 'hidden' }}>
-                <img src={leader.image} alt={leader.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <img src={leader.image} alt={leader.name} style={{ width: '100%', height: '100%', objectFit: 'cover', imageRendering: '-webkit-optimize-contrast', transform: 'translateZ(0) scale(1)', filter: 'contrast(1.1) saturate(1.1) brightness(1.02)', WebkitFontSmoothing: 'antialiased' }} />
               </div>
 
               {/* Content Box */}

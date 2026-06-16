@@ -127,16 +127,18 @@ const Home = () => {
               rotate: { duration: 10, repeat: Infinity, ease: "easeInOut" }
             }}
             style={{ 
-              width: 'clamp(350px, 68vw, 900px)', 
+              width: 'clamp(300px, 50vw, 600px)', 
               height: 'auto', 
-              marginTop: '100px',
-              opacity: 0.45, 
-              filter: 'blur(1px) drop-shadow(0 0 80px rgba(255,204,0,0.8))' 
+              marginTop: '80px',
+              opacity: 0.7, 
+              filter: 'drop-shadow(0 0 30px rgba(255,204,0,0.3)) contrast(1.1) brightness(1.1)',
+              imageRendering: '-webkit-optimize-contrast',
+              WebkitFontSmoothing: 'antialiased'
             }} 
           />
         </motion.div>
 
-        <div className="container" style={{ textAlign: 'center', zIndex: 1, perspective: '1000px' }}>
+        <div className="container" style={{ textAlign: 'center', zIndex: 1, perspective: '1000px', paddingTop: 'clamp(1rem, 10vw, 6rem)' }}>
           <motion.div
             initial={{ opacity: 0, rotateX: 45, y: 100, translateZ: -200 }}
             animate={{ opacity: 1, rotateX: 0, y: 0, translateZ: 0 }}
@@ -151,11 +153,11 @@ const Home = () => {
                 className="radial-text-gradient"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                style={{ display: 'inline-block', fontSize: 'clamp(2rem, 8vw, 5rem)', fontWeight: 900, filter: 'drop-shadow(0 0 20px rgba(255, 204, 0, 0.8))' }}
+                style={{ display: 'inline-block', fontSize: 'clamp(2rem, 8vw, 5rem)', fontWeight: 900 }}
               >
                 OZIROTECH
               </motion.span> <br />
-              <span className="text-gradient" style={{ display: 'inline-block', fontSize: 'clamp(1rem, 5.5vw, 2.5rem)', marginTop: '0.5rem', fontWeight: 800, filter: 'drop-shadow(0 0 15px rgba(255, 102, 0, 0.6))' }}>
+              <span className="text-gradient" style={{ display: 'inline-block', fontSize: 'clamp(1rem, 5.5vw, 2.5rem)', marginTop: '1rem', fontWeight: 800 }}>
                 AI WORLD PRIVATE LIMITED
               </span>
             </h1>

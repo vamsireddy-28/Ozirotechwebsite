@@ -11,8 +11,8 @@ const Products = () => {
   return (
     <div style={{ paddingTop: '120px', paddingBottom: '100px', position: 'relative', minHeight: '100vh' }}>
       <div className="scanline-overlay"></div>
-      
-      <section style={{ position: 'relative', zIndex: 2, width: '100%', padding: '0 2rem' }}>
+
+      <section style={{ position: 'relative', zIndex: 2, width: '95%', padding: '0 2rem' }}>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
