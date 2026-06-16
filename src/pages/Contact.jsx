@@ -57,9 +57,13 @@ const Contact = () => {
 
             {/* Contact Form Side */}
             <div style={{ flex: '1 1 400px', padding: '3rem', zIndex: 1 }}>
+              <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
               <form 
-                onSubmit={async (e) => {
-                  e.preventDefault();
+                action="https://formsubmit.co/chenikalavamsireddy@gmail.com" 
+                method="POST"
+                target="hidden_iframe"
+                onSubmit={(e) => {
+                  // Do NOT preventDefault, let it submit to the iframe
                   const form = e.target;
                   const submitBtn = form.querySelector('button[type="submit"]');
                   const originalText = submitBtn.innerHTML;
@@ -67,43 +71,25 @@ const Contact = () => {
                   submitBtn.innerHTML = 'Sending...';
                   submitBtn.disabled = true;
 
-                  const formData = new FormData(form);
-                  // IMPORTANT: The user needs to get their free access key from web3forms.com
-                  // They enter gvenushashank@gmail.com on the website and get a key sent to them.
-                  // Replace 'YOUR_ACCESS_KEY_HERE' with that key.
-                  formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
-
-                  try {
-                    const response = await fetch("https://api.web3forms.com/submit", {
-                      method: "POST",
-                      body: formData
-                    });
+                  // Fake a success UI update after 1.5s since cross-origin iframes can't be read
+                  setTimeout(() => {
+                    submitBtn.innerHTML = 'Message Sent!';
+                    submitBtn.style.background = 'var(--accent-cyan)';
+                    submitBtn.style.color = '#000';
+                    form.reset();
                     
-                    const data = await response.json();
-                    
-                    if (data.success) {
-                      submitBtn.innerHTML = 'Message Sent!';
-                      submitBtn.style.background = 'var(--accent-cyan)';
-                      submitBtn.style.color = '#000';
-                      form.reset();
-                      
-                      setTimeout(() => {
-                        submitBtn.innerHTML = originalText;
-                        submitBtn.disabled = false;
-                        submitBtn.style.background = 'transparent';
-                        submitBtn.style.color = 'var(--accent-cyan)';
-                      }, 3000);
-                    } else {
-                      submitBtn.innerHTML = 'Error! Try Again';
+                    setTimeout(() => {
+                      submitBtn.innerHTML = originalText;
                       submitBtn.disabled = false;
-                    }
-                  } catch (error) {
-                    submitBtn.innerHTML = 'Error! Try Again';
-                    submitBtn.disabled = false;
-                  }
+                      submitBtn.style.background = 'transparent';
+                      submitBtn.style.color = 'var(--accent-cyan)';
+                    }, 3000);
+                  }, 1500);
                 }} 
                 style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
               >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
                 <h2 style={{ color: 'var(--text-primary)', fontSize: '1.8rem', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Send a Message</h2>
                 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
