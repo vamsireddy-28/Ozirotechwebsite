@@ -122,10 +122,9 @@ const Home = () => {
           <motion.img 
             src="/assets/logo.png" 
             alt="Ozirotech Background" 
-            animate={{ rotate: 360, scale: [1, 1.3, 1] }}
+            animate={{ rotate: [-15, 30, -15] }}
             transition={{ 
-              rotate: { duration: 60, repeat: Infinity, ease: "linear" },
-              scale: { duration: 20, repeat: Infinity, ease: "easeInOut" }
+              rotate: { duration: 10, repeat: Infinity, ease: "easeInOut" }
             }}
             style={{ 
               width: 'clamp(350px, 68vw, 900px)', 

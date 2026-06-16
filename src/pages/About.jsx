@@ -37,12 +37,12 @@ const AnimatedText = ({ text, delayOffset = 0, isBoldFirstWords = 0 }) => {
       viewport={{ once: true, margin: "-50px" }}
     >
       {words.map((word, index) => (
-        <motion.span 
-          variants={child} 
-          key={index} 
-          style={{ 
-            fontWeight: index < isBoldFirstWords ? 'bold' : 'normal', 
-            color: index < isBoldFirstWords ? 'var(--text-primary)' : 'inherit' 
+        <motion.span
+          variants={child}
+          key={index}
+          style={{
+            fontWeight: index < isBoldFirstWords ? 'bold' : 'normal',
+            color: index < isBoldFirstWords ? 'var(--text-primary)' : 'inherit'
           }}
         >
           {word}
@@ -52,19 +52,40 @@ const AnimatedText = ({ text, delayOffset = 0, isBoldFirstWords = 0 }) => {
   );
 };
 
+const leadershipTeam = [
+  {
+    name: "SAI SANDESH",
+    role: "DIRECTOR",
+    description: "Visionary leader driving company growth and strategic partnerships.",
+    image: ""
+  },
+  {
+    name: "DANIEL BENJAMIN",
+    role: "CHIEF TECHNICAL OFFICER (CTO)",
+    description: "Leading innovation in AI development and technological infrastructure.",
+    image: ""
+  },
+  {
+    name: "DEVIKA PAKRUTHI",
+    role: "FOUNDER & DIRECTOR",
+    description: "Entrepreneurial spirit and driving force behind Ozirotech's founding vision.",
+    image: ""
+  }
+];
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const text1 = "Our Mission: To develop future-ready innovators by providing hands-on access to cutting-edge robotics and AI technologies that prepare students for Industry 4.0 and Industry 5.0 careers.";
-  
+
   const text2 = "Our Vision: To become a global leader in robotics and intelligent technology education by building world-class innovation laboratories that inspire creativity, research, and technological advancement.";
 
   return (
     <div style={{ paddingTop: '120px', paddingBottom: '100px', position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div className="scanline-overlay"></div>
-      
+
       {/* Mission & Vision Section */}
       <section className="full-container" style={{ position: 'relative', zIndex: 2, marginBottom: '6rem', width: '100%', display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '90%', maxWidth: '1400px', margin: '0 auto', textAlign: 'left' }}>
@@ -76,7 +97,7 @@ const About = () => {
             <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 4rem)', marginBottom: '4rem', textAlign: 'center', whiteSpace: 'nowrap' }}>
               About <span style={{ color: 'var(--accent-purple)', textShadow: '0 0 20px var(--accent-purple)' }}>OZIROTECH</span>
             </h2>
-            
+
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem', marginBottom: '4rem', justifyContent: 'flex-start' }}>
               <div className="glass-panel" style={{ flex: '1 1 400px', maxWidth: '650px', minHeight: '280px', padding: '3.5rem 3rem', fontSize: 'clamp(1rem, 3vw, 1.4rem)', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
                 <AnimatedText text={text1} delayOffset={0.5} isBoldFirstWords={2} />
@@ -85,8 +106,8 @@ const About = () => {
                 <AnimatedText text={text2} delayOffset={2} isBoldFirstWords={2} />
               </div>
             </div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 3, duration: 1 }}
@@ -107,10 +128,10 @@ const About = () => {
       </section>
 
       {/* Additional Information Sections */}
-      <section style={{ position: 'relative', zIndex: 2, width: '90%', margin: '0 5%' }}>
+      <section style={{ position: 'relative', zIndex: 2, width: '90%', margin: '0 5% 6rem 5%' }}>
         <div className="three-col-grid">
-          
-          <motion.div 
+
+          <motion.div
             className="glass-panel"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -131,7 +152,7 @@ const About = () => {
             </ul>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="glass-panel"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -154,7 +175,7 @@ const About = () => {
             </ul>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="glass-panel"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -168,15 +189,15 @@ const About = () => {
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
               {[
-                "Humanoid Robots", "Collaborative Robots (Cobots)", "Swarm Robotics", 
-                "Autonomous Drones", "AI-Powered Manufacturing", "Digital Twins", 
+                "Humanoid Robots", "Collaborative Robots (Cobots)", "Swarm Robotics",
+                "Autonomous Drones", "AI-Powered Manufacturing", "Digital Twins",
                 "Smart Factories", "Spatial Computing", "Augmented Reality", "Next-Gen Automation"
               ].map((tech, i) => (
-                <span key={i} style={{ 
-                  padding: '5px 10px', 
-                  background: 'rgba(255, 102, 0, 0.1)', 
-                  border: '1px solid rgba(255, 102, 0, 0.3)', 
-                  borderRadius: '20px', 
+                <span key={i} style={{
+                  padding: '5px 10px',
+                  background: 'rgba(255, 102, 0, 0.1)',
+                  border: '1px solid rgba(255, 102, 0, 0.3)',
+                  borderRadius: '20px',
                   fontSize: '0.85rem',
                   color: 'var(--text-primary)'
                 }}>
@@ -186,6 +207,53 @@ const About = () => {
             </div>
           </motion.div>
 
+        </div>
+      </section>
+
+      {/* Leadership Team Section */}
+      <section style={{ position: 'relative', zIndex: 2, width: '90%', margin: '0 auto', textAlign: 'center' }}>
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '4rem' }}
+        >
+          OUR <span style={{ color: 'var(--accent-cyan)' }}>LEADERSHIP TEAM</span>
+        </motion.h2>
+
+        <div className="three-col-grid">
+          {leadershipTeam.map((leader, index) => (
+            <motion.div
+              key={index}
+              className="glass-panel"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              style={{ overflow: 'hidden', padding: 0, display: 'flex', flexDirection: 'column', maxWidth: '450px', margin: '0 auto' }}
+            >
+              {/* Image */}
+              <div style={{ width: '100%', height: '380px', overflow: 'hidden' }}>
+                <img src={leader.image} alt={leader.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </div>
+
+              {/* Content Box */}
+              <div style={{
+                padding: '2rem 1.5rem',
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                background: 'rgba(0, 0, 0, 0.2)',
+                borderTop: '2px solid var(--accent-cyan)'
+              }}>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: '900', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>{leader.name}</h3>
+                <h4 style={{ fontSize: '0.9rem', color: 'var(--accent-cyan)', marginBottom: '1rem', fontWeight: '700', letterSpacing: '1px' }}>{leader.role}</h4>
+                <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', margin: 0 }}>
+                  {leader.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
     </div>
