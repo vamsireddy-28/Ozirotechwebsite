@@ -57,7 +57,7 @@ const leadershipTeam = [
     name: "SAI SANDESH",
     role: "DIRECTOR",
     description: "Visionary leader driving company growth and strategic partnerships.",
-    image: ""
+    image: "/images/director.jpeg"
   },
   {
     name: "DANIEL BENJAMIN",
@@ -67,9 +67,9 @@ const leadershipTeam = [
   },
   {
     name: "DEVIKA PAKRUTHI",
-    role: "FOUNDER & DIRECTOR",
+    role: "FOUNDER & CEO",
     description: "Entrepreneurial spirit and driving force behind Ozirotech's founding vision.",
-    image: ""
+    image: "/images/ceo.jpeg"
   }
 ];
 
