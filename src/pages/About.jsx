@@ -69,7 +69,7 @@ const leadershipTeam = [
     name: "DEVIKA PAKRUTHI",
     role: "FOUNDER & CEO",
     description: "Entrepreneurial spirit and driving force behind Ozirotech's founding vision.",
-    image: "/images/ceo.jpeg"
+    image: "/images/ceo_new.png"
   }
 ];
 
