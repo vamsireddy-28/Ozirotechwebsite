@@ -47,6 +47,21 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: none;
 }
 
+.text-justify-custom {
+  /* Default to left alignment on mobile to guarantee no weird spacing */
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .text-justify-custom {
+    text-align: justify;
+    text-justify: inter-character; /* Distributes space between letters too, reducing huge gaps between words */
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+
 .text-gradient {
   background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-magenta));
   -webkit-background-clip: text;

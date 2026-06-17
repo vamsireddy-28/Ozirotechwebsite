@@ -114,7 +114,7 @@ const ProductCard = ({ product, index, displayOnly = false }) => {
           }}>
             {product.name}
           </h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>
+          <p className="text-justify-custom" style={{ color: 'var(--text-secondary)', fontSize: '1rem', marginBottom: '1.5rem', flex: 1, lineHeight: '1.6' }}>
             {product.tagline}
           </p>
           {!displayOnly && (

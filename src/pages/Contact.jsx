@@ -32,8 +32,8 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="glass-panel"
-          style={{ 
-            maxWidth: '1000px', 
+          style={{
+            maxWidth: '1000px',
             margin: '0 auto',
             overflow: 'hidden'
           }}
@@ -42,24 +42,24 @@ const Contact = () => {
           <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {/* Robot Image Side */}
             <div style={{ flex: '1 1 300px', padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.2)', zIndex: 1 }}>
-              <img 
-                src="/assets/tesla_optimus_1781171028026.png" 
-                alt="Ozirotech Robotics Product" 
-                style={{ 
-                  width: '100%', 
-                  height: 'auto', 
-                  objectFit: 'contain', 
+              <img
+                src="/assets/tesla_optimus_1781171028026.png"
+                alt="Ozirotech Robotics Product"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
                   filter: 'drop-shadow(0 10px 30px rgba(255, 204, 0, 0.3))',
                   transform: 'scaleX(-1)'
-                }} 
+                }}
               />
             </div>
 
             {/* Contact Form Side */}
             <div style={{ flex: '1 1 400px', padding: '3rem', zIndex: 1 }}>
               <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
-              <form 
-                action="https://formsubmit.co/chenikalavamsireddy@gmail.com" 
+              <form
+                action="https://formsubmit.co/chenikalavamsireddy@gmail.com"
                 method="POST"
                 target="hidden_iframe"
                 onSubmit={(e) => {
@@ -67,7 +67,7 @@ const Contact = () => {
                   const form = e.target;
                   const submitBtn = form.querySelector('button[type="submit"]');
                   const originalText = submitBtn.innerHTML;
-                  
+
                   submitBtn.innerHTML = 'Sending...';
                   submitBtn.disabled = true;
 
@@ -77,7 +77,7 @@ const Contact = () => {
                     submitBtn.style.background = 'var(--accent-cyan)';
                     submitBtn.style.color = '#000';
                     form.reset();
-                    
+
                     setTimeout(() => {
                       submitBtn.innerHTML = originalText;
                       submitBtn.disabled = false;
@@ -85,31 +85,31 @@ const Contact = () => {
                       submitBtn.style.color = 'var(--accent-cyan)';
                     }, 3000);
                   }, 1500);
-                }} 
+                }}
                 style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}
               >
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 <h2 style={{ color: 'var(--text-primary)', fontSize: '1.8rem', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Send a Message</h2>
-                
+
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     name="name"
                     required
-                    placeholder="John Doe"
-                    style={{ 
-                      background: 'rgba(255, 255, 255, 0.05)', 
-                      border: '1px solid var(--glass-border)', 
-                      padding: '1rem', 
+                    placeholder="Ozirotech "
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid var(--glass-border)',
+                      padding: '1rem',
                       borderRadius: '8px',
                       color: '#fff',
                       fontFamily: 'var(--font-main)',
                       fontSize: '1rem',
                       outline: 'none',
                       transition: 'border-color 0.3s'
-                    }} 
+                    }}
                     onFocus={(e) => e.target.style.borderColor = 'var(--accent-cyan)'}
                     onBlur={(e) => e.target.style.borderColor = 'var(--glass-border)'}
                   />
@@ -117,15 +117,15 @@ const Contact = () => {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     name="email"
                     required
-                    placeholder="john@example.com"
-                    style={{ 
-                      background: 'rgba(255, 255, 255, 0.05)', 
-                      border: '1px solid var(--glass-border)', 
-                      padding: '1rem', 
+                    placeholder="contact@ozirotech.com"
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid var(--glass-border)',
+                      padding: '1rem',
                       borderRadius: '8px',
                       color: '#fff',
                       fontFamily: 'var(--font-main)',
@@ -140,15 +140,15 @@ const Contact = () => {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Message</label>
-                  <textarea 
+                  <textarea
                     name="message"
                     required
                     rows="5"
                     placeholder="How can we help you?"
-                    style={{ 
-                      background: 'rgba(255, 255, 255, 0.05)', 
-                      border: '1px solid var(--glass-border)', 
-                      padding: '1rem', 
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: '1px solid var(--glass-border)',
+                      padding: '1rem',
                       borderRadius: '8px',
                       color: '#fff',
                       fontFamily: 'var(--font-main)',
@@ -162,15 +162,15 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className="glow-button"
-                  style={{ 
-                    marginTop: '1rem', 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    justifyContent: 'center', 
-                    gap: '10px' 
+                  style={{
+                    marginTop: '1rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '10px'
                   }}
                 >
                   Send Message
