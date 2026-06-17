@@ -102,7 +102,7 @@ const Services = () => {
               </div>
               <div style={{ padding: '3rem 2rem 2.5rem', transform: 'translateZ(30px)', flexGrow: 1 }}>
                 <h3 style={{ fontSize: '1.4rem', marginBottom: '1rem', color: 'var(--text-primary)', lineHeight: '1.4' }}>{lab.title}</h3>
-                <p className="text-justify-custom" style={{ color: 'var(--text-secondary)', lineHeight: '1.6', fontSize: '1.2rem' }}>{lab.desc}</p>
+                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', fontSize: '1.2rem', textAlign: 'left' }}>{lab.desc}</p>
               </div>
             </motion.div>
           ))}

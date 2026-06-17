@@ -63,7 +63,7 @@ const leadershipTeam = [
     name: "DANIEL BENJAMIN",
     role: "CHIEF TECHNICAL OFFICER (CTO)",
     description: "Leading innovation in AI development and technological infrastructure.",
-    image: "/images/cto.png"
+    image: "/images/daniel_new.png"
   },
   {
     name: "DEVIKA PAKRUTHI",
@@ -140,7 +140,7 @@ const About = () => {
             style={{ padding: '3rem 2rem' }}
           >
             <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-cyan)', marginBottom: '1.5rem' }}>Industry Collaboration</h3>
-            <p className="text-justify-custom" style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
+            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem', textAlign: 'left' }}>
               Ozirotech collaborates with technology manufacturers, research institutions, and innovation partners worldwide to provide access to emerging technologies and industry-standard equipment.
             </p>
             <h4 style={{ color: 'var(--text-primary)', marginBottom: '1rem', letterSpacing: '1px' }}>Global sourcing regions include:</h4>
@@ -161,7 +161,7 @@ const About = () => {
             style={{ padding: '3rem 2rem' }}
           >
             <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-magenta)', marginBottom: '1.5rem' }}>Workshops and Training</h3>
-            <p className="text-justify-custom" style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
+            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem', textAlign: 'left' }}>
               Professional training programs help students and educators stay updated with emerging technologies.
             </p>
             <h4 style={{ color: 'var(--text-primary)', marginBottom: '1rem', letterSpacing: '1px' }}>Programs include:</h4>
@@ -184,7 +184,7 @@ const About = () => {
             style={{ padding: '3rem 2rem' }}
           >
             <h3 style={{ fontSize: '1.8rem', color: 'var(--accent-purple)', marginBottom: '1.5rem' }}>Future Technologies</h3>
-            <p className="text-justify-custom" style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
+            <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem', textAlign: 'left' }}>
               Our laboratories are designed to support future innovations and cutting-edge paradigms.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>

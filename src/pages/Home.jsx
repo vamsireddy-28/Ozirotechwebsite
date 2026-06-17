@@ -170,7 +170,7 @@ const Home = () => {
             style={{ maxWidth: '800px', margin: '0 auto 3rem auto' }}
           >
             <h2 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.8rem)', color: 'var(--accent-cyan)', marginBottom: '1rem', textTransform: 'none' }}>
-              Empowering Education with Future Ai & Content Creation Labs
+              Empowering Education with Future AI & Content Creation Labs
             </h2>
           </motion.div>
 

@@ -9,30 +9,32 @@ const Footer = () => {
 
         {/* Brand */}
         <div>
-          <h2 style={{ fontFamily: 'var(--font-display)', letterSpacing: '3px', marginBottom: '1rem', color: '#fff' }}>OZIROTECH</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', letterSpacing: '3px', marginBottom: '0.5rem', color: '#fff' }}>OZIROTECH</h2>
+          <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '1rem', fontSize: '0.85rem', letterSpacing: '2px', fontWeight: '600' }}>AI WORLD PRIVATE LIMITED</h4>
           <p style={{ color: 'var(--text-primary)', lineHeight: '1.6', maxWidth: '300px' }}>
-            Empowering Education with Future Ai & Content Creation Labs.
+            Empowering Education with Future AI & Content Creation Labs.
           </p>
         </div>
 
         {/* Links */}
         <div>
-          <h3 style={{ color: 'var(--accent-cyan)', marginBottom: '1.5rem', fontSize: '1.2rem', fontFamily: 'var(--font-display)' }}>Quick Links</h3>
-          <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-primary)', lineHeight: '2' }}>
+          <h3 style={{ color: 'var(--accent-cyan)', marginBottom: '0.8rem', fontSize: '1.2rem', fontFamily: 'var(--font-display)' }}>Quick Links</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: 'var(--text-primary)', lineHeight: '2' }}>
             <li><Link to="/" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Home</Link></li>
             <li><Link to="/products" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Product</Link></li>
             <li><Link to="/services" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Services</Link></li>
             <li><Link to="/about" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>About Us</Link></li>
+            <li><Link to="/contact" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Contact Us</Link></li>
           </ul>
         </div>
 
         {/* Location / Contact */}
         <div>
-          <h3 style={{ color: 'var(--accent-purple)', marginBottom: '1.5rem', fontSize: '1.2rem', fontFamily: 'var(--font-display)' }}>Contact Us</h3>
-          <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-primary)', lineHeight: '2' }}>
-            <li style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
-              <MapPin size={18} color="var(--accent-purple)" style={{ flexShrink: 0 }} />
-              <span>Bhimunipatnam, visakhapatnam, Andhara Pradesh, India</span>
+          <h3 style={{ color: 'var(--accent-purple)', marginBottom: '0.8rem', fontSize: '1.2rem', fontFamily: 'var(--font-display)' }}>Contact Us</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: 'var(--text-primary)', lineHeight: '2' }}>
+            <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px' }}>
+              <MapPin size={18} color="var(--accent-purple)" style={{ flexShrink: 0, marginTop: '4px' }} />
+              <span style={{ lineHeight: '1.5' }}>Bhimunipatnam, Visakhapatnam,<br/>Andhra Pradesh, India</span>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
               <Mail size={18} color="var(--accent-purple)" style={{ flexShrink: 0 }} />

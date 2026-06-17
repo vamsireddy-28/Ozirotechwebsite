@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .text-justify-custom {
     text-align: justify;
-    text-justify: inter-character; /* Distributes space between letters too, reducing huge gaps between words */
+    text-justify: inter-word; /* Distributes space between words, which is the professional standard for English */
     hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;

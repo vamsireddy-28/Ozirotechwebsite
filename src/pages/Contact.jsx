@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
 
@@ -137,6 +137,8 @@ const Contact = () => {
                     onBlur={(e) => e.target.style.borderColor = 'var(--glass-border)'}
                   />
                 </div>
+
+
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   <label style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Message</label>
