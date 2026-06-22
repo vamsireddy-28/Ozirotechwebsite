@@ -47,6 +47,22 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Map Location */}
+        <div>
+          <h3 style={{ color: 'var(--accent-cyan)', marginBottom: '0.8rem', fontSize: '1.2rem', fontFamily: 'var(--font-display)', letterSpacing: '2px', fontStyle: 'italic', textTransform: 'uppercase' }}>Map Location</h3>
+          <div style={{ width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden' }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3795.7989473378666!2d83.41857907517776!3d17.94152898304325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDU2JzI5LjUiTiA4M8KwMjUnMTYuMiJF!5e0!3m2!1sen!2sin!4v1782118068483!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
       </div>
 
       <div style={{ textAlign: 'center', color: 'var(--text-primary)', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.05)', fontSize: '0.9rem' }}>
