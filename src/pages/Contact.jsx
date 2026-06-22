@@ -98,7 +98,7 @@ const Contact = () => {
                     type="text"
                     name="name"
                     required
-                    placeholder="Ozirotech "
+                    placeholder="OZIROTECH AI WORLD"
                     style={{
                       background: 'rgba(255, 255, 255, 0.05)',
                       border: '1px solid var(--glass-border)',

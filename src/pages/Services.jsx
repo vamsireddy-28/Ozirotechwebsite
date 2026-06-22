@@ -51,15 +51,15 @@ const Services = () => {
         </motion.div>
 
         {/* 4 Columns layout on large screens */}
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-          gap: '2rem', 
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '2rem',
           perspective: '1500px',
           gridAutoFlow: 'dense'
         }}>
           {labsData.map((lab, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="glass-panel"
               initial={{ opacity: 0, y: 50, rotateX: 20 }}
@@ -67,28 +67,28 @@ const Services = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1, duration: 0.6, type: "spring", stiffness: 100 }}
               style={{ overflow: 'hidden', padding: 0, display: 'flex', flexDirection: 'column', transformStyle: 'preserve-3d', height: '100%' }}
-              whileHover={{ 
-                scale: 1.05, 
-                rotateY: 5, 
+              whileHover={{
+                scale: 1.05,
+                rotateY: 5,
                 rotateX: -5,
-                boxShadow: '0 25px 50px rgba(255, 204, 0, 0.2)' 
+                boxShadow: '0 25px 50px rgba(255, 204, 0, 0.2)'
               }}
             >
               <div style={{ position: 'relative', overflow: 'hidden', height: '260px', transform: 'translateZ(20px)' }}>
-                <motion.img 
-                  src={lab.image} 
+                <motion.img
+                  src={lab.image}
                   alt={lab.title}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.5 }}
                 />
-                <div style={{ 
-                  position: 'absolute', 
-                  bottom: '-20px', 
-                  right: '20px', 
-                  background: 'rgba(10, 10, 15, 0.9)', 
+                <div style={{
+                  position: 'absolute',
+                  bottom: '-20px',
+                  right: '20px',
+                  background: 'rgba(10, 10, 15, 0.9)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
-                  padding: '15px', 
+                  padding: '15px',
                   borderRadius: '50%',
                   display: 'flex',
                   alignItems: 'center',
