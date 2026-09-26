@@ -405,6 +405,7 @@ nav.scrolled {
   letter-spacing: 2px;
   transition: all 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-links a::after {
@@ -586,6 +587,7 @@ nav.scrolled {
     right: 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     margin-top: 0;
+    z-index: 101;
   }
 
   .nav-links.active {
@@ -598,6 +600,9 @@ nav.scrolled {
 
   .nav-links a {
     font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    cursor: pointer;
   }
 
   .container {
