@@ -13,7 +13,19 @@ const ProductDetails = () => {
   }, []);
 
   if (!product) {
-    return <div className="container" style={{ paddingTop: '100px' }}><h1>Product Not Found</h1></div>;
+    return (
+      <div style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '140px 2rem 100px' }}>
+        <div className="glass-panel" style={{ maxWidth: '500px', width: '100%', padding: '3rem 2rem', textAlign: 'center' }}>
+          <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Product Not Found</h2>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+            The requested hardware model could not be found in our innovation catalog.
+          </p>
+          <Link to="/products" className="glow-button" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <ArrowLeft size={16} /> Back to Products
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -97,7 +109,7 @@ const ProductDetails = () => {
                   className="glass-panel" 
                   style={{ padding: '1.5rem' }}
                 >
-                  <h4 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem', color: product.color, fontSize: '0.85rem' }}><Activity size={18} /> Key Features</h4>
+                  <h4 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem', color: product.color, fontSize: '0.98rem' }}><Activity size={18} /> Key Features</h4>
                   <ul style={{ listStyle: 'none', padding: 0 }}>
                     {product.features.map((feat, i) => (
                       <motion.li 
@@ -105,7 +117,7 @@ const ProductDetails = () => {
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.5 + (i * 0.1) }}
-                        style={{ marginBottom: '0.8rem', color: '#ddd', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '8px' }}
+                        style={{ marginBottom: '0.8rem', color: '#ddd', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '8px' }}
                       >
                         <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: product.color, flexShrink: 0 }}></div>
                         {feat}
@@ -122,12 +134,12 @@ const ProductDetails = () => {
                 className="glass-panel" 
                 style={{ padding: '1.5rem' }}
               >
-                <h4 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem', color: product.color, fontSize: '0.85rem' }}><Box size={18} /> Specifications</h4>
+                <h4 style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem', color: product.color, fontSize: '0.98rem' }}><Box size={18} /> Specifications</h4>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                   {Object.entries(product.specs).map(([key, value], i) => (
                     <div key={i} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--glass-border)', paddingBottom: '5px' }}>
-                      <span style={{ textTransform: 'capitalize', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>{key.replace(/([A-Z])/g, ' $1').trim()}</span>
-                      <span style={{ fontWeight: '600', color: '#fff', fontSize: '0.8rem', textAlign: 'right' }}>{value}</span>
+                      <span style={{ textTransform: 'capitalize', color: 'var(--text-secondary)', fontSize: '0.92rem' }}>{key.replace(/([A-Z])/g, ' $1').trim()}</span>
+                      <span style={{ fontWeight: '600', color: '#fff', fontSize: '0.92rem', textAlign: 'right' }}>{value}</span>
                     </div>
                   ))}
                 </div>

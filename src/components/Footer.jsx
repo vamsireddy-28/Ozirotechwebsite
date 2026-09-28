@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer style={{ width: '100%', padding: '4rem 0 2rem 0', borderTop: '1px solid var(--glass-border)', background: 'rgba(3,5,10,0.9)', position: 'relative', zIndex: 10, boxSizing: 'border-box' }}>
+    <footer style={{ width: '100%', padding: '4rem 0 2rem 0', borderTop: '1px solid var(--glass-border)', background: 'rgba(8, 13, 26, 0.94)', position: 'relative', zIndex: 10, boxSizing: 'border-box' }}>
       <div style={{ width: '90%', maxWidth: '1400px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '4rem', marginBottom: '3rem' }}>
 
         {/* Brand */}
@@ -21,7 +21,7 @@ const Footer = () => {
           <h3 style={{ color: 'var(--accent-cyan)', marginBottom: '1.5rem', fontSize: '1.2rem', fontFamily: 'var(--font-display)' }}>Quick Links</h3>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: 'var(--text-primary)', lineHeight: '1.5', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <li><Link to="/" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Home</Link></li>
-            <li><Link to="/products" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Product</Link></li>
+            <li><Link to="/products" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Products</Link></li>
             <li><Link to="/services" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Services</Link></li>
             <li><Link to="/about" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>About Us</Link></li>
             <li><Link to="/contact" style={{ transition: 'color 0.3s', cursor: 'pointer' }} onMouseOver={e => e.target.style.color = 'var(--accent-cyan)'} onMouseOut={e => e.target.style.color = 'var(--text-primary)'}>Contact Us</Link></li>
@@ -58,7 +58,7 @@ const Footer = () => {
               width="100%"
               height="100%"
               style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

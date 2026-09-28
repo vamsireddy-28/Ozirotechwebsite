@@ -10,6 +10,12 @@ export const products = [
       "Designed to take over dangerous, repetitive, or physically taxing tasks, the humanoid features 40 bespoke electromechanical actuators that provide human-like dexterity and fluid motion. From handling delicate manufacturing components to executing heavy-lifting logistics, its adaptability redefines workforce automation.",
       "With a high-capacity energy cell and rapid-charging capabilities, Optimus operates across extended shifts without fatigue. It represents a monumental leap forward in achieving a post-scarcity economy through accessible, scalable autonomous labor."
     ],
+    features: [
+      'Full Bipedal Autonomous Navigation',
+      'Human-Grade Hand Dexterity with 11-DoF',
+      'Tesla Autopilot AI Vision Processing',
+      '2.3 kWh High-Density Structural Battery'
+    ],
     specs: {
       'Height': '5 ft 8 in',
       'Weight': '160 lbs',
@@ -28,6 +34,12 @@ export const products = [
       "The Oziro Neural VR is not just a headset—it is a portal to the metaverse. Utilizing experimental non-invasive brain-computer interface (BCI) sensors embedded within the halo strap, the headset translates neural intentions directly into virtual actions, eliminating the need for handheld controllers.",
       "Equipped with dual 8K micro-OLED displays, the visual fidelity is indistinguishable from reality. Advanced foveated rendering powered by integrated AI processors ensures zero latency and crystal-clear graphics even in the most demanding simulations.",
       "Designed for enterprise training, advanced architectural visualization, and next-generation gaming, the Oziro Neural VR sets a new paradigm for digital interaction, perfectly bridging the gap between the physical and virtual worlds."
+    ],
+    features: [
+      'Non-Invasive BCI Neural Link Sensors',
+      'Dual 8K Micro-OLED Ultra-HD Displays',
+      'Foveated Rendering with AI Eye-Tracking',
+      'Low-Latency Wireless Spatial Audio'
     ],
     specs: {
       'Resolution': '8K per eye',
@@ -48,6 +60,12 @@ export const products = [
       "Its intelligent side-follow system and enhanced joint motors allow for acrobatic movements, high-speed sprints up to 3.5 m/s, and seamless navigation through treacherous industrial environments, making it ideal for autonomous security patrols and hazardous site inspections.",
       "Powered by an integrated GPT-driven voice assistant, the Go2 isn't just a machine; it's a communicative companion capable of understanding complex vocal commands and interacting naturally with its human operators."
     ],
+    features: [
+      'Ultra-Wide 4D LiDAR L1 Environmental Sensing',
+      'Dynamic Agile Locomotion & Sprints up to 3.5 m/s',
+      'Integrated GPT-Powered Vocal Interface',
+      'Intelligent Autonomous Companion Follow Mode'
+    ],
     specs: {
       'Max Speed': '3.5 m/s',
       'Payload': '5 kg',
@@ -66,6 +84,12 @@ export const products = [
       "The DJI Neo represents the pinnacle of miniaturized aerospace engineering. Despite weighing under 250 grams—exempting it from complex flight regulations in most regions—it packs an array of professional-grade cinematic tools into a chassis that fits in the palm of your hand.",
       "Featuring a 1/1.3-inch CMOS sensor, the Neo captures breathtaking 4K HDR video with incredible dynamic range. Its omnidirectional binocular vision system calculates flight paths in real-time, autonomously avoiding obstacles and ensuring buttery-smooth tracking shots through dense environments.",
       "With an impressive 10-kilometer transmission range and 34 minutes of uninterrupted flight time, the DJI Neo is the ultimate tool for content creators and filmmakers looking to capture the impossible without being weighed down by heavy equipment."
+    ],
+    features: [
+      'Ultralightweight Foldable Design (<250g)',
+      'Cinematic 4K Ultra-HDR Video Recording',
+      'Omnidirectional Optical Sensing & Avoidance',
+      '10 km Extended Video Transmission System'
     ],
     specs: {
       'Weight': '249g',
@@ -86,6 +110,12 @@ export const products = [
       "With a mesmerizing 2000x2000 resolution and over a thousand ultra-bright LEDs, the projections remain vivid and crystal clear even under intense ambient lighting. This makes it an unparalleled asset for high-end retail advertising, tech exhibitions, and immersive art installations.",
       "The device is fully smart-enabled, allowing users to instantly upload, manage, and synchronize holographic video content directly from a smartphone app or over a localized Wi-Fi network, ensuring your display is always dynamic and engaging."
     ],
+    features: [
+      'High-Density 4-Blade 1024 LED Array',
+      'Persistence-of-Vision Floating 3D Imagery',
+      'Mobile App & Cloud Wi-Fi Content Sync',
+      '2000x2000 Ultra-Bright Daylight Projection'
+    ],
     specs: {
       'Resolution': '2000x2000',
       'Blades': '4',
@@ -104,6 +134,12 @@ export const products = [
       "Our Industrial 3D Printer is designed to bridge the gap between digital ideation and physical creation. Equipped with a state-of-the-art dual-extrusion system, it allows for the simultaneous printing of complex geometries and soluble support structures, ensuring flawless overhangs and intricate internal channels.",
       "With a massive build volume and a fully enclosed, temperature-controlled chamber, the printer guarantees warp-free production of large-scale prototypes using advanced engineering filaments such as carbon fiber, nylon, and ABS.",
       "An intuitive touchscreen interface, auto-bed leveling, and seamless cloud integration streamline the printing workflow. Whether you're an engineering student prototyping a mechanical part or a designer exploring new forms, this printer delivers sub-millimeter precision every single time."
+    ],
+    features: [
+      'Dual Direct-Drive Extrusion for Engineering Filaments',
+      'Enclosed Chamber with Thermal Regulation',
+      'Sub-Millimeter 50-Micron Precision Tolerances',
+      'Automated Bed Leveling & Cloud Monitoring'
     ],
     specs: {
       'Build Volume': '300x300x400 mm',

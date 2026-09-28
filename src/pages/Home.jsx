@@ -127,7 +127,7 @@ const Home = () => {
               rotate: { duration: 10, repeat: Infinity, ease: "easeInOut" }
             }}
             style={{
-              width: 'clamp(500px, 80vw, 1000px)',
+              width: 'clamp(280px, 80vw, 1000px)',
               height: 'auto',
               marginTop: '80px',
               opacity: 0.5,
@@ -199,7 +199,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            style={{ fontSize: 'clamp(1rem, 3.8vw, 3rem)', color: 'var(--text-primary)', marginBottom: '1rem', whiteSpace: 'nowrap' }}
+            style={{ fontSize: 'clamp(1.4rem, 3.8vw, 3rem)', color: 'var(--text-primary)', marginBottom: '1rem' }}
           >
             Why <span style={{ color: 'var(--accent-purple)' }}>Robotics Education</span> Matters
           </motion.h2>

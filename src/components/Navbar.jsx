@@ -14,20 +14,23 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = () => {
-    setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
       <div className="nav-content" style={{ width: '100%', padding: '0 4rem', boxSizing: 'border-box' }}>
         <div className="nav-header">
-          <Link to="/" className="nav-logo" onClick={handleNavClick} style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <Link to="/" className="nav-logo" onClick={() => setMobileMenuOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <img src="/assets/logo.png" alt="Ozirotech Logo" style={{ height: '40px', width: 'auto', borderRadius: '50%', boxShadow: '0 0 10px rgba(255, 204, 0,0.5)' }} onError={(e) => { e.target.style.display = 'none'; }} />
             <span>OZIROTECH</span>
           </Link>
-          <div className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <div
+            className="mobile-menu-btn"
+            role="button"
+            tabIndex={0}
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { setMobileMenuOpen(!mobileMenuOpen); } }}
+          >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </div>
         </div>
@@ -41,11 +44,11 @@ const Navbar = () => {
         )}
 
         <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
-          <Link to="/" onClick={handleNavClick}>Home</Link>
-          <Link to="/products" onClick={handleNavClick}>Products</Link>
-          <Link to="/services" onClick={handleNavClick}>Services</Link>
-          <Link to="/about" onClick={handleNavClick}>About Us</Link>
-          <Link to="/contact" onClick={handleNavClick}>Contact Us</Link>
+          <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link to="/products" onClick={() => setMobileMenuOpen(false)}>Products</Link>
+          <Link to="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+          <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+          <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
         </div>
       </div>
     </nav>

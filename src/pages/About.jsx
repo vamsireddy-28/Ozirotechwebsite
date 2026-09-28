@@ -94,7 +94,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 4rem)', marginBottom: '4rem', textAlign: 'center', whiteSpace: 'nowrap' }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 5vw, 4rem)', marginBottom: '4rem', textAlign: 'center' }}>
               About <span style={{ color: 'var(--accent-purple)', textShadow: '0 0 20px var(--accent-purple)' }}>OZIROTECH</span>
             </h2>
 
@@ -246,9 +246,9 @@ const About = () => {
                 background: 'rgba(0, 0, 0, 0.2)',
                 borderTop: '2px solid var(--accent-cyan)'
               }}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: '900', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>{leader.name}</h3>
-                <h4 style={{ fontSize: '0.9rem', color: 'var(--accent-cyan)', marginBottom: '1rem', fontWeight: '700', letterSpacing: '1px' }}>{leader.role}</h4>
-                <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', margin: 0 }}>
+                <h3 style={{ fontSize: '1.45rem', fontWeight: '900', marginBottom: '0.4rem', color: 'var(--text-primary)' }}>{leader.name}</h3>
+                <h4 style={{ fontSize: '0.98rem', color: 'var(--accent-cyan)', marginBottom: '1rem', fontWeight: '700', letterSpacing: '1px' }}>{leader.role}</h4>
+                <p style={{ fontSize: '1.02rem', lineHeight: '1.6', color: 'var(--text-secondary)', margin: 0 }}>
                   {leader.description}
                 </p>
               </div>

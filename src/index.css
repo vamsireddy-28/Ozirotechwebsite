@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --bg-color: #03050a;
-  --bg-gradient: radial-gradient(circle at top right, #0a0f1a, #03050a);
+  --bg-color: #080d1a;
+  --bg-gradient: radial-gradient(circle at top right, #14223d 0%, #0a1224 55%, #060a14 100%);
   --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
+  --text-secondary: #e8ecf4;
   --accent-cyan: #ffcc00;
   --accent-purple: #ff6600;
   --accent-magenta: #ffd700;
-  --glass-bg: rgba(10, 15, 25, 0.4);
-  --glass-border: rgba(255, 255, 255, 0.03);
+  --glass-bg: rgba(18, 28, 48, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.08);
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Inter', system-ui, -apple-system, sans-serif;
 }
@@ -24,7 +24,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -372,8 +372,8 @@ nav {
 }
 
 nav.scrolled {
-  background: rgba(3, 5, 10, 0.85);
-  backdrop-filter: blur(15px);
+  background: rgba(8, 13, 26, 0.88);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--glass-border);
   padding: 1rem 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -549,7 +549,7 @@ nav.scrolled {
 
   html,
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .nav-content {
@@ -579,7 +579,7 @@ nav.scrolled {
     text-align: left;
     gap: 2.5rem;
     padding: 1.5rem;
-    background: rgba(3, 5, 10, 0.95);
+    background: rgba(10, 16, 32, 0.96);
     border: 1px solid var(--glass-border);
     border-radius: 0 0 0 12px;
     position: absolute;
@@ -595,11 +595,11 @@ nav.scrolled {
   }
 
   .nav-logo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .nav-links a {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     display: block;
     width: 100%;
     cursor: pointer;
@@ -618,7 +618,7 @@ nav.scrolled {
 
   html,
   body {
-    font-size: 14px;
+    font-size: 15.5px;
   }
 
   .nav-links {
@@ -626,6 +626,6 @@ nav.scrolled {
   }
 
   .nav-links a {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 }
